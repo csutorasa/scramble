@@ -2,9 +2,9 @@
 public class Scrambler {
 	public static String Scramble(String input)
 	{
-		if(input.length() <= 2)
-			return input;
 		String[] words = input.split(" ");
+		if(words.length == 0)
+			return "";
 		StringBuilder output = new StringBuilder();
 		for(String word : words)
 		{
