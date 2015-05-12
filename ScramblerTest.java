@@ -29,5 +29,9 @@ public class ScramblerTest {
 	public void texttest() {
 		assertEquals("Tihs is a slpmae txet", Scrambler.Scramble("This is a sample text"));
 	}
-
+	
+	@Test
+	public void emptytest() {
+		assertEquals("", Scrambler.Scramble(""));
+	}
 }
